@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Landing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vlava - v4.8.0
+  * Template URL: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <script src="static/main.js"></script>
+
+
+</head>
+
+<body>
+  
+  
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="static/Assets/logo.png" alt="" class="img" height="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('redirect_index')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('redirect_about')}}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{url_for('redirect_test')}}">Test</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav><!-- .navbar -->
+
+  <!-- ======= Encode / Decode ======= -->
+  <section id="decrypt">
+    <div class="container">
+        <h1 class="decrypt-banner">StegLib </h1>
+      <div class="row">
+        <div class="col-md-5 decrypt-image">
+          <h3>Encoded Image:</h3>
+          <img src="static/Assets/trees.jpg" alt="decrypted image" />
+        </div>
+        <div class="col-md-6 decrypt-text" >
+            <h3>Decoded Text:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ullam adipisci error at minus delectus aspernatur nesciunt repudiandae praesentium optio doloremque omnis, vel iure magni harum, doloribus, accusantium quis alias. Reiciendis fuga eveniet aliquid tenetur voluptatem adipisci architecto velit quos ipsa sit nemo veritatis maiores, provident placeat rerum, totam asperiores? Nemo sit, dolorem beatae mollitia laboriosam corporis sed distinctio cupiditate quibusdam saepe sunt suscipit cum non ea molestiae explicabo pariatur magni atque facilis incidunt iure magnam rem tenetur quas? Error assumenda, voluptatem odit ducimus, quia itaque expedita saepe natus iste temporibus reprehenderit minima sapiente a, inci d tenetur voluptatem adipisci architecto velit quos ipsa sit nemo veritatis maiores, provident placeat rerum, totam asperiores? Nemo sit, dolorem beatae mollitia laboriosam corporis sed distinctio cupiditate quibusdam saepe sunt suscipit cum non ea molestiae explicabo pariatur magni atque facilis incidunt iure magnam rem tenetur quas? Error assumenda, voluptatem odit ducimus, quia itaque expedita saepe natus iste temporibus reprehenderit minima sapiente a,  dunt veritatis maiores. Atque, dicta!
+              <h3> Try out our steganalysis tool! </h3>
+              <div class="d-inline-flex">
+                <!-- <div class="col-2"><button id="btn-1" class="btn btn-primary">Continue</button> </div>
+                <div class="col-2"><button id="btn-2" class="btn btn-primary">Back</button></div> -->
+                    <div class="p-2"><button onclick="window.location.href='{{url_for('redirect_encode')}}'" id="btn-1" class="btn btn-primary btn-lg">Encode</button></div>
+                    <div class="p-2"><button onclick="window.location.href='{{url_for('redirect_decode')}}'" id="btn-2" class="btn btn-primary btn-lg">Decode</button></div>
+                     
+            </div>
+        </div>
+      </div>
+     
+    </div>
+
+  </section>
+
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h3>STEGLIB</h3>
+            <p>Questions? Contact us!</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>STEGLIB</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vlava-free-bootstrap-one-page-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
